@@ -7,6 +7,10 @@ import increaseFactory from './factories/increaseFactory.js';
 import musicFactory from './factories/musicFactory.js';
 
 describe("Home page tests", () => {
+  beforeEach(() => {
+    cy.request("POST", "http://localhost:5000/recommendations/reset", {});
+  });
+
   it("should register a song successfully", () => {
     const music = musicFactory();
 

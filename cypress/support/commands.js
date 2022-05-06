@@ -41,3 +41,11 @@ Cypress.Commands.add('createRecommendation', () => {
 
   cy.wait("@createRecommendations");
 });
+
+Cypress.Commands.add("reset", () => {
+  cy.request("POST", "http://localhost:5000/recommendations/reset", {});
+});
+
+Cypress.Commands.add("seed", () => {
+  cy.request("POST", "http://localhost:5000/recommendations/seed", {});
+})

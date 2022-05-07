@@ -1,62 +1,66 @@
 /// <reference types="cypress" />
 
-import alertFactory from './factories/alertFactory.js';
-import decreaseFactory from './factories/decreaseFactory.js';
-import deleteFactory from './factories/deleteFactory.js';
-import increaseFactory from './factories/increaseFactory.js';
-import musicFactory from './factories/musicFactory.js';
+import recommendationBodyFactory from './factories/recommendationBodyFactory.js';
 
 describe("Home page tests", () => {
   beforeEach(() => {
-    cy.request("POST", "http://localhost:5000/recommendations/reset", {});
+    cy.resetDB();
   });
 
-  it("should register a song successfully", () => {
-    const music = musicFactory();
+  it("should register a recommendation successfully", () => {
+    const recommendation = recommendationBodyFactory();
 
-    cy.contains(music.name);
+    cy.createRecommendationTest(recommendation);
+
+    cy.contains(recommendation.name);
 
     cy.end();
   });
 
-  it("should return an alert when registering an existing song", () => {
-    musicFactory();
+  it("should return an alert when registering an existing recommendation", () => {
+    recommendationBodyFactory();
 
-    alertFactory();
+    cy.alertTest();
 
     cy.end();
   });
 
-  it("should return an alert when registering an invalid song", () => {
+  it("should return an alert when registering an invalid recommendation", () => {
     cy.get('button').click();
 
     cy.visit("http://localhost:3000/");
 
-    alertFactory();
+    cy.alertTest();
 
     cy.end();
   });
 
   it("should increase recommendation counter", () => {
-    const music = musicFactory();
+    const recommendation = recommendationBodyFactory();
 
-    increaseFactory(music);
+    cy.createRecommendationTest(recommendation);
+
+    cy.increaseTest(recommendation);
 
     cy.end();
   });
 
   it("should decrease recommendation counter", () => {
-    const music = musicFactory();
+    const recommendation = recommendationBodyFactory();
 
-    decreaseFactory(music);
+    cy.createRecommendationTest(recommendation);
+
+    cy.decreaseTest(recommendation);
 
     cy.end();
   });
 
-  it("must exclude the recommendation by decreasing the counter 5 times", () => {
-    const music = musicFactory();
+  it("should exclude the recommendation by decreasing the counter 5 times", () => {
+    const recommendation = recommendationBodyFactory();
 
-    deleteFactory(music);
+    cy.createRecommendationTest(recommendation);
+
+    cy.deleteTest(recommendation);
 
     cy.contains("No recommendations yet! Create your own :)");
   

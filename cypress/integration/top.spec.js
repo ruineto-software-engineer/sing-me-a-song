@@ -2,8 +2,8 @@
 
 describe("Top page tests", () => {
   beforeEach(() => {
-    cy.request("POST", "http://localhost:5000/recommendations/reset", {});
-    cy.request("POST", "http://localhost:5000/recommendations/seed", {});
+    cy.resetDB();
+    cy.seedDB();
   });
 
   it("should return recommendations according to the amount", () => {

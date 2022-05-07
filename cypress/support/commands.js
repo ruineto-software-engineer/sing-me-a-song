@@ -48,4 +48,4 @@ Cypress.Commands.add("reset", () => {
 
 Cypress.Commands.add("seed", () => {
   cy.request("POST", "http://localhost:5000/recommendations/seed", {});
-})
+});

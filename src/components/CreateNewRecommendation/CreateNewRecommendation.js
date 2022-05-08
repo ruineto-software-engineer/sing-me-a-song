@@ -1,20 +1,23 @@
-import { useState } from "react";
-import styled from "styled-components";
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 
-import { IoReturnUpForwardOutline } from "react-icons/io5";
+import { useState } from 'react';
+import styled from 'styled-components';
+
+import { IoReturnUpForwardOutline } from 'react-icons/io5';
 
 export default function CreateNewRecommendation({ onCreateNewRecommendation = () => 0, disabled = false }) {
-  const [name, setName] = useState("");
-  const [link, setLink] = useState("");
+  const [name, setName] = useState('');
+  const [link, setLink] = useState('');
 
   const handleCreateRecommendation = () => {
     onCreateNewRecommendation({
       name,
       link
     });
-    setLink("");
-    setName("");
-  }
+    setLink('');
+    setName('');
+  };
   
   return (
     <Container>

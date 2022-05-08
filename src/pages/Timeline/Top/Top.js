@@ -1,6 +1,8 @@
-import useTopRecommendations from "../../../hooks/api/useTopRecommendations";
+/* eslint-disable react/react-in-jsx-scope */
 
-import Recommendation from "../../../components/Recommendation";
+import useTopRecommendations from '../../../hooks/api/useTopRecommendations';
+
+import Recommendation from '../../../components/Recommendation';
 
 export default function Home() {
   const { recommendations, loadingRecommendations, listRecommendations } = useTopRecommendations();
@@ -28,5 +30,5 @@ export default function Home() {
         )
       }
     </>
-  )
+  );
 }

@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+/* eslint-disable react/react-in-jsx-scope */
 
-import useRecommendations from "../../../hooks/api/useRecommendations";
-import useCreateRecommendation from "../../../hooks/api/useCreateRecommendation";
+import { useEffect } from 'react';
 
-import CreateNewRecommendation from "../../../components/CreateNewRecommendation";
-import Recommendation from "../../../components/Recommendation";
+import useRecommendations from '../../../hooks/api/useRecommendations';
+import useCreateRecommendation from '../../../hooks/api/useCreateRecommendation';
+
+import CreateNewRecommendation from '../../../components/CreateNewRecommendation';
+import Recommendation from '../../../components/Recommendation';
 
 export default function Home() {
   const { recommendations, loadingRecommendations, listRecommendations } = useRecommendations();
@@ -21,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     if (creatingRecommendationError) {
-      alert("Error creating recommendation!");
+      alert('Error creating recommendation!');
     }
   }, [creatingRecommendationError]);
 
@@ -49,5 +51,5 @@ export default function Home() {
         )
       }
     </>
-  )
+  );
 }

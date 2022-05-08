@@ -1,12 +1,12 @@
-import api from "./api";
+import api from './api';
 
 export async function list() {
-  const response = await api.get("/recommendations");
+  const response = await api.get('/recommendations');
   return response.data;
 }
 
 export async function create(data) {
-  const response = await api.post("/recommendations", data);
+  const response = await api.post('/recommendations', data);
   return response.data;
 }
 
@@ -21,7 +21,7 @@ export async function downvote(id) {
 }
 
 export async function listTop() {
-  const response = await api.get("/recommendations/top/10");
+  const response = await api.get('/recommendations/top/10');
   return response.data;
 }
 

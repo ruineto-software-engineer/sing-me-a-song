@@ -1,6 +1,6 @@
-import * as service from '../../services/recommendations';
+import * as service from "../../services/recommendations";
 
-import useAsync from '../useAsync';
+import useAsync from "../useAsync";
 
 export default function useUpvoteRecommendation() {
   const { loading, act, error } = useAsync(service.upvote, false);
@@ -8,6 +8,6 @@ export default function useUpvoteRecommendation() {
   return {
     loadingUpvoteRecommendations: loading,
     upvoteRecommendation: act,
-    errorUpvotingRecommendation: error
+    errorUpvotingRecommendation: error,
   };
 }

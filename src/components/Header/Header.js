@@ -1,7 +1,5 @@
-/* eslint-disable react/react-in-jsx-scope */
-
-import styled from 'styled-components';
-import { VscPlayCircle } from 'react-icons/vsc';
+import styled from "styled-components";
+import { VscPlayCircle } from "react-icons/vsc";
 
 export default function Header() {
   return (

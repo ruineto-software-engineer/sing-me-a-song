@@ -1,5 +1,5 @@
-import useAsync from '../useAsync';
-import * as service from '../../services/recommendations';
+import useAsync from "../useAsync";
+import * as service from "../../services/recommendations";
 
 export default function useRecommendations() {
   const { data, loading, act } = useAsync(service.list);
@@ -7,6 +7,6 @@ export default function useRecommendations() {
   return {
     recommendations: data,
     loadingRecommendations: loading,
-    listRecommendations: act
+    listRecommendations: act,
   };
 }

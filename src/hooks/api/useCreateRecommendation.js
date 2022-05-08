@@ -1,5 +1,5 @@
-import useAsync from '../useAsync';
-import * as service from '../../services/recommendations';
+import useAsync from "../useAsync";
+import * as service from "../../services/recommendations";
 
 export default function useRecommendations() {
   const { loading, act, error } = useAsync(service.create, false);
@@ -7,6 +7,6 @@ export default function useRecommendations() {
   return {
     loadingCreatingRecommendation: loading,
     createRecommendation: act,
-    creatingRecommendationError: error
+    creatingRecommendationError: error,
   };
 }

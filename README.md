@@ -20,14 +20,18 @@
   <p align="center">
     An anonymous music recommendations app!
     <br />
+    <!--     
     <a href="#" style="pointer-events: none; color:gray">
-    <strong>Explore the docs »</strong>
-    </a>
+      <strong>Explore the docs »</strong>
+    </a> 
     <br />
+    -->
     <br />
+    <!--     
     <a 
-    href="#" style="pointer-events: none; color:gray">View Demo</a>
+    href="#" style="pointer-events: none; color:gray">View Demo</a> 
     ·
+    -->
     <a href="https://github.com/ruineto-dev/sing-me-a-song/issues">Report Bug</a>
     ·
     <a href="https://github.com/ruineto-dev/sing-me-a-song/issues">Request Feature</a>

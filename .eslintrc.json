@@ -28,6 +28,8 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "no-alert": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "radix": "off"
   }
 }

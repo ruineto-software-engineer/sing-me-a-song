@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+-->
 
-## Available Scripts
+<br />
+<div align="center">
+  <!--   
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a> 
+  -->
+  <h3 align="center">Sing me a Song</h3>
+  <p align="center">
+    An anonymous music recommendations app!
+    <br />
+    <a href="#" style="pointer-events: none; color:gray">
+    <strong>Explore the docs »</strong>
+    </a>
+    <br />
+    <br />
+    <a 
+    href="#" style="pointer-events: none; color:gray">View Demo</a>
+    ·
+    <a href="https://github.com/ruineto-dev/sing-me-a-song/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ruineto-dev/sing-me-a-song/issues">Request Feature</a>
+  </p>
+</div>
 
-In the project directory, you can run:
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project aims to anonymously allow users to easily share and recommend music to other users.
 
-### `npm test`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
+In this section all the main frameworks/libraries used for the development of this project are presented.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React.js](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://axios-http.com/)
+- [Web Vitals](https://www.npmjs.com/package/web-vitals)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a href="#docs"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+In this section you will know all the steps so that you can make a quick and practical installation of the project. Follow the steps that have been listed below sequentially and enjoy the work!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before starting the project installation, it is essential that some prerequisites are met, and each of them are listed below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+- postgres
+  ```sh
+  sudo apt install postgresql postgresql-contrib
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+_Follow the steps listed below to correctly install and configure the application in a simple and practical way. If there is an error in the installation or if any of the steps listed below is not done, you are not sure that the project will work on your machine, follow the steps, if you have any questions about this step, contact us._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repo
+   ```sh
+   git clone git@github.com:ruineto-dev/sing-me-a-song.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Enter your BASE URL in `.env`
+   ```env
+   REACT_APP_API_BASE_URL=http://localhost:5000
+   ```
+   <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start using the project, just follow the steps that were presented along the Roadmap, listed below. Soon some photos/images/videos of usability examples of the project will be posted here.
 
-### Analyzing the Bundle Size
+<!--
+_For more examples, please refer to the [Documentation](#)_
+-->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [x] Clone the project
+- [x] Open the project with an IDE/code editor
+- [ ] Install project dependencies
+- [ ] Create a new branch with your new feature - [ ] Access the new feature - [ ] Push the new modifications
+- [ ] Add a pull request
+- [ ] Wait for the evaluation (around 1 day)
 
-### Advanced Configuration
+See the [open issues](https://github.com/ruineto-dev/sing-me-a-song/issues) for a full list of proposed features (and known issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!--
+Toda contribuição sempre será bem-vinda de todos os desenvolvedores. As contribuições e compartilhamento de conhecimento é o que torna o mundo um lugar diverso e cheio de possibilidades, então se têm uma sugestão, por favor não deixe de compartilhar!
+Caso deseje compartilhar uma sugestão, faça um fork do repositório e crie uma solicitação pull. Caso se sinta a vontade abra uma issue com a tag "enhancement". Ajude a divulgar esse incrível trabalho dando uma estrela no projeto! Obrigado por ter chegado até aqui!
+-->
 
-### `npm run build` fails to minify
+Every contribution is always welcome from all developers. Contributing and sharing knowledge is what makes the world a diverse and exciting place, so if you have a suggestion, please **share** it.
+If you want to share a suggestion, fork the repository and create a pull request. If you feel comfortable, open an issue with the tag **"enhancement"**. Help spread the word about this incredible work by giving the project a **star**! Thanks again!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingNewFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingNewFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingNewFeature`)
+5. Open a Pull Request
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## License
+
+<!-- Distributed under the MIT License. See `LICENSE.txt` for more information. -->
+
+Distributed under a FREE license. Consult the developer for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contact
+
+Rui Neto - [@ruineto-dev](https://github.com/ruineto-dev) - ruineto11@gmail.com <br />
+Project Link: [@sing-me-a-song](https://github.com/ruineto-dev/sing-me-a-song)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Acknowledgments
+
+I would like to express my sincere thanks to the team and the teams that set out to develop these excellent technologies that were essential for the creation of this project.
+
+- [Jest](https://jestjs.io/)
+- [Cypress](https://www.cypress.io/)
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/ruineto-dev/sing-me-a-song/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/ruineto-dev/sing-me-a-song/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/ruineto-dev/sing-me-a-song/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/ruineto-dev/sing-me-a-song/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/ruineto-dev/sing-me-a-song/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/rui-neto/
+[product-screenshot]: images/screenshot.png

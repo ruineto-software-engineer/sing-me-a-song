@@ -13,10 +13,10 @@ describe("Random page tests", () => {
 
     cy.url().should("equal", "http://localhost:3000/random");
 
-    cy.get('article:first-of-type').within(() => {
-      cy.get('div:last-of-type').should(($div) => {
+    cy.get("article:first-of-type").within(() => {
+      cy.get("div:last-of-type").should(($div) => {
         const text = parseInt($div.text());
-      
+
         expect(text).to.be.greaterThan(-6);
       });
     });

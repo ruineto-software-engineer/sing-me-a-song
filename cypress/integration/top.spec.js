@@ -13,12 +13,12 @@ describe("Top page tests", () => {
 
     cy.url().should("equal", "http://localhost:3000/top");
 
-    cy.get('article:first-of-type').within(() => {
-      cy.get('div:last-of-type').should('have.text',"245");
+    cy.get("article:first-of-type").within(() => {
+      cy.get("div:last-of-type").should("have.text", "245");
     });
 
-    cy.get('article:last-of-type').within(() => {
-      cy.get('div:last-of-type').should('have.text',"0");
+    cy.get("article:last-of-type").within(() => {
+      cy.get("div:last-of-type").should("have.text", "0");
     });
   });
 });

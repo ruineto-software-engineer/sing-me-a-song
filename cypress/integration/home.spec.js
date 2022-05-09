@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import recommendationBodyFactory from './factories/recommendationBodyFactory.js';
+import recommendationBodyFactory from "./factories/recommendationBodyFactory";
 
 describe("Home page tests", () => {
   beforeEach(() => {
@@ -26,7 +26,7 @@ describe("Home page tests", () => {
   });
 
   it("should return an alert when registering an invalid recommendation", () => {
-    cy.get('button').click();
+    cy.get("button").click();
 
     cy.visit("http://localhost:3000/");
 
@@ -63,7 +63,7 @@ describe("Home page tests", () => {
     cy.deleteTest(recommendation);
 
     cy.contains("No recommendations yet! Create your own :)");
-  
+
     cy.end();
   });
 });

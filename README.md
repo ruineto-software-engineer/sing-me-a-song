@@ -181,8 +181,9 @@ Project Link: [@sing-me-a-song](https://github.com/ruineto-dev/sing-me-a-song)
 
 I would like to express my sincere thanks to the team and the teams that set out to develop these excellent technologies that were essential for the creation of this project.
 
-- [Jest](https://jestjs.io/)
 - [Cypress](https://www.cypress.io/)
+- [ESlint](https://eslint.org/)
+- [Prettier](https://www.npmjs.com/package/prettier)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge

@@ -130,8 +130,10 @@ _For more examples, please refer to the [Documentation](#)_
 
 - [x] Clone the project
 - [x] Open the project with an IDE/code editor
-- [ ] Install project dependencies
-- [ ] Create a new branch with your new feature - [ ] Access the new feature - [ ] Push the new modifications
+- [x] Install project dependencies
+- [ ] Create a new branch with your new feature
+  - [ ] Access the new feature
+  - [ ] Push the new modifications
 - [ ] Add a pull request
 - [ ] Wait for the evaluation (around 1 day)
 
